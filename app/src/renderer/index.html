@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <!-- Trang này không có quyền gọi mạng (connect-src 'none'): mọi cuộc gọi API đi qua tiến trình main. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; object-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HRM · Quản lý nhân sự</title>
+</head>
+<body>
+  <div id="goc"></div>
+  <script type="module" src="./ung_dung/khoi_dong.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "hrm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phần mềm quản lý nhân sự: Electron + React → HTTPS → API Express → MongoDB",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "workspaces": [
+    "shared",
+    "server",
+    "app"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "server": "npm start --workspace server",
+    "app": "npm start --workspace app"
+  }
+}

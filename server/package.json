@@ -1,0 +1,28 @@
+{
+  "name": "@hrm/server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API Express (HTTPS) cho phần mềm quản lý nhân sự",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "khoi_tao_mongo": "node scripts/khoi_tao_mongo.js",
+    "tao_admin": "node scripts/tao_admin.js",
+    "dat_phien_ban_toi_thieu": "node scripts/dat_phien_ban_toi_thieu.js",
+    "khoi_tao_csdl": "node scripts/khoi_tao_csdl.js",
+    "nang_cap_csdl": "node scripts/nang_cap_csdl.js",
+    "nap_du_lieu_mau": "node scripts/nap_du_lieu_mau.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@hrm/shared": "*",
+    "bcrypt": "^5.1.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.10.0",
+    "zod": "^3.25.76"
+  }
+}
