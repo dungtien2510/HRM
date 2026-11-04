@@ -21,8 +21,8 @@ Write-Host "  RAM: $ram GB   CPU: $((Get-CimInstance Win32_Processor | Measure-O
 if ($ram -lt 3.5) { Ghi-Canh-Bao 'RAM dưới 4 GB: MongoDB sẽ rất chật.' }
 elseif ($ram -lt 7.5) { Ghi-Canh-Bao 'RAM 4 GB chạy được nhưng sát; khuyến nghị 8 GB.' }
 else { Ghi-Ok 'RAM đủ dùng' }
-$oC = Get-PSDrive C
-Write-Host ("  Ổ C: còn trống {0:N0} GB" -f ($oC.Free / 1GB))
+$oC = Get-PSDrive G
+Write-Host ("  Ổ G: còn trống {0:N0} GB" -f ($oC.Free / 1GB))
 
 Ghi-Buoc 'Node.js'
 $node = Tim-Node

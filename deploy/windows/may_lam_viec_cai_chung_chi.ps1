@@ -4,7 +4,7 @@
   Chạy trên MÁY LÀM VIỆC (và có thể cả máy chủ): tin cậy chứng chỉ gốc nội bộ của HRM và thêm tên máy chủ vào hosts.
 .DESCRIPTION
   Chép hrm_goc.cer (chỉ file .cer, KHÔNG bao giờ chép .pfx) từ máy chủ sang máy này, rồi chạy:
-    .\may_lam_viec_cai_chung_chi.ps1 -DuongDanCer C:\hrm_goc.cer -DauVanTay <SHA-256 người quản trị đọc cho bạn>   (IP máy chủ lấy từ cau_hinh_trien_khai.psd1; hoặc thêm -DiaChiMayChu <IP>)
+    .\may_lam_viec_cai_chung_chi.ps1 -DuongDanCer G:\Dung\lap_trinh\project\project_new\clau_AI\hrm_goc.cer -DauVanTay <SHA-256 người quản trị đọc cho bạn>   (IP máy chủ lấy từ cau_hinh_trien_khai.psd1; hoặc thêm -DiaChiMayChu <IP>)
   Chứng chỉ gốc này chỉ nên dùng cho HRM: ai giữ khóa riêng của CA đều có thể cấp chứng chỉ "hợp lệ" cho máy này.
 #>
 param(

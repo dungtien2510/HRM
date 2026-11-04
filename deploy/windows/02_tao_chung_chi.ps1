@@ -14,7 +14,7 @@
 param(
     [string]$TenMay,                   # mặc định lấy từ cau_hinh_trien_khai.psd1 (TenMayChu)
     [string[]]$DiaChiIpThem,           # mặc định: IpMayChu trong cau_hinh_trien_khai.psd1
-    [string]$ThuMucXuat = 'C:\HRM\chung_chi',
+    [string]$ThuMucXuat = 'G:\Dung\lap_trinh\project\project_new\clau_AI\chung_chi',
     [int]$SoNamHieuLucMayChu = 2
 )
 . "$PSScriptRoot\chung.ps1"

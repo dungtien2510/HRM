@@ -10,8 +10,8 @@
 #>
 param(
     [Parameter(Mandatory = $true)][string]$DuongDanMsi,
-    [string]$ThuMucDuLieu = 'C:\HRM\du_lieu\mongodb',
-    [string]$ThuMucNhatKy = 'C:\HRM\nhat_ky_he_thong\mongodb',
+    [string]$ThuMucDuLieu = 'G:\Dung\lap_trinh\project\project_new\clau_AI\du_lieu\mongodb',
+    [string]$ThuMucNhatKy = 'G:\Dung\lap_trinh\project\project_new\clau_AI\nhat_ky_he_thong\mongodb',
     [int]$Cong = 27017
 )
 . "$PSScriptRoot\chung.ps1"

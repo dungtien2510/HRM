@@ -1,7 +1,7 @@
 ﻿# ============================================================================
 #  CẤU HÌNH TRIỂN KHAI — SỬA FILE NÀY trước khi chạy các script trong thư mục này.
 #  Đường dẫn: <thư mục kho mã>\deploy\windows\cau_hinh_trien_khai.psd1
-#  (mặc định: C:\HRM\hrm\deploy\windows\cau_hinh_trien_khai.psd1)
+#  (mặc định: G:\Dung\lap_trinh\project\project_new\clau_AI\hrm\deploy\windows\cau_hinh_trien_khai.psd1)
 #  Lưu ở dạng UTF-8 có BOM. Chỉ chứa dữ liệu (không viết lệnh) vào file này.
 # ============================================================================
 @{
@@ -26,5 +26,5 @@
     CongApi = 8443
 
     # Đường dẫn tới nssm.exe: tải nssm-2.24.zip từ https://nssm.cc , giải nén, lấy win64\nssm.exe.
-    DuongDanNssm = 'C:\Tools\nssm\nssm.exe'
+    DuongDanNssm = 'G:\Dung\lap_trinh\project\project_new\clau_AI\Tools\nssm\nssm.exe'
 }

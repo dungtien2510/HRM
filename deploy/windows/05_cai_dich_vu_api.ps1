@@ -9,9 +9,9 @@
   Chạy lại được: dịch vụ/tác vụ cũ sẽ được gỡ rồi tạo lại.
 #>
 param(
-    [string]$ThuMucMaNguon = 'C:\HRM\hrm',
-    [string]$ThuMucNhatKy = 'C:\HRM\nhat_ky_he_thong\api',
-    [string]$ThuMucChungChi = 'C:\HRM\chung_chi',
+    [string]$ThuMucMaNguon = 'G:\Dung\lap_trinh\project\project_new\clau_AI\hrm',
+    [string]$ThuMucNhatKy = 'G:\Dung\lap_trinh\project\project_new\clau_AI\nhat_ky_he_thong\api',
+    [string]$ThuMucChungChi = 'G:\Dung\lap_trinh\project\project_new\clau_AI\chung_chi',
     [string]$DuongDanNssm = '',        # mặc định lấy từ cau_hinh_trien_khai.psd1 (DuongDanNssm)
     [ValidateSet('Dich_vu_NSSM', 'Tac_vu_hen_gio')][string]$CachChay = 'Dich_vu_NSSM',
     [string]$TenDichVu = 'HrmApi'

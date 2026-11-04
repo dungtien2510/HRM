@@ -4,8 +4,8 @@
   Sinh file server\.env từ .env.example với các bí mật ngẫu nhiên và quyền truy cập chặt.
 #>
 param(
-    [string]$ThuMucMaNguon = 'C:\HRM\hrm',
-    [string]$ThuMucChungChi = 'C:\HRM\chung_chi',
+    [string]$ThuMucMaNguon = 'G:\Dung\lap_trinh\project\project_new\clau_AI\hrm',
+    [string]$ThuMucChungChi = 'G:\Dung\lap_trinh\project\project_new\clau_AI\chung_chi',
     [switch]$GhiDe
 )
 . "$PSScriptRoot\chung.ps1"

@@ -8,7 +8,7 @@
   chép cả thư mục node_modules sang rồi dùng -BoQuaCaiThuVien.
 #>
 param(
-    [string]$ThuMucMaNguon = 'C:\HRM\hrm',
+    [string]$ThuMucMaNguon = 'G:\Dung\lap_trinh\project\project_new\clau_AI\hrm',
     [switch]$BoQuaCaiThuVien
 )
 . "$PSScriptRoot\chung.ps1"
