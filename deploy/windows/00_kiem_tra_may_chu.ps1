@@ -39,8 +39,21 @@ foreach ($cong in 27017, 8443) {
     if ($dangDung) { Ghi-Canh-Bao "Cổng $cong đang có tiến trình lắng nghe." } else { Ghi-Ok "Cổng $cong đang trống" }
 }
 
+# Ghi-Buoc 'Công cụ ngoài (cho bước dịch vụ)'
+# $nssm = Get-Command nssm.exe -ErrorAction SilentlyContinue
+# if ($nssm) { Ghi-Ok "Có NSSM: $($nssm.Source)" } else { Ghi-Canh-Bao 'Chưa thấy nssm.exe trong PATH. Cần ở bước 05 (hoặc dùng -CachChay Tac_vu_hen_gio).' }
+# Write-Host ''
+# Write-Host 'Kiểm tra xong.' -ForegroundColor Green
 Ghi-Buoc 'Công cụ ngoài (cho bước dịch vụ)'
-$nssm = Get-Command nssm.exe -ErrorAction SilentlyContinue
-if ($nssm) { Ghi-Ok "Có NSSM: $($nssm.Source)" } else { Ghi-Canh-Bao 'Chưa thấy nssm.exe trong PATH. Cần ở bước 05 (hoặc dùng -CachChay Tac_vu_hen_gio).' }
+
+$NssmPath = "G:\Dung\lap_trinh\project\project_new\clau_AI\Tools\nssm\nssm.exe"
+
+if (Test-Path $NssmPath) {
+    $nssm = Get-Item $NssmPath
+    Ghi-Ok "Có NSSM: $($nssm.FullName)"
+} else {
+    Ghi-Canh-Bao "Không tìm thấy nssm.exe tại: $NssmPath"
+}
+
 Write-Host ''
 Write-Host 'Kiểm tra xong.' -ForegroundColor Green
