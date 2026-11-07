@@ -52,7 +52,7 @@ test('quyền tối thiểu: chỉ một CSDL, không quyền cấu trúc ở m�
     assert.equal(p.resource.anyResource, undefined);
   }
   assert.equal(QUYEN_THEO_COLLECTION.cau_hinh.includes('remove'), false);
-  assert.equal(QUYEN_THEO_COLLECTION.nhan_su.includes('remove'), true, 'admin xóa hồ sơ qua API');
+  assert.equal(QUYEN_THEO_COLLECTION.nhan_su.includes('remove'), false, 'admin xóa hồ sơ qua API');
   assert.equal(QUYEN_THEO_COLLECTION.luot_dang_nhap.includes('update'), false);
   const khac = tao_dac_quyen('csdl_khac');
   assert.ok(khac.every((p) => p.resource.db === 'csdl_khac'));
